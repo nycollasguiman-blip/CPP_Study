@@ -1,17 +1,8 @@
 //std_lib_facilities.h
-#include<iostream>
-#include<string>
-#include<vector>
-#include<algorithm>
-#include<cmath>
-using namespace std;
-inline void keep_window_open() { char ch; cin>>ch; }
+#include "std_lib_facilities.h"
 
 //Consertando os caracteres especiais
 #include <windows.h> 
-
-//Para usar comandos do terminal
-#include <stdlib.h>
 
 // Esse programa é resultado da parte prática do capítulo 3 do livro, basicamente é feito 
 // algumas perguntas e uma mensagem de email é gerada com base em um template.
