@@ -4,7 +4,7 @@
 // Consertando os caracteres especiais
 #include <windows.h>
 
-// Programa que recebe o valor em milhas e retorna em quilômetros
+// Esse programa serve para ver saídas noterminal relacionadas a erros por nomes inválidos
 
 int main()
 {
@@ -12,9 +12,5 @@ int main()
     SetConsoleOutputCP(CP_UTF8); // Do windows.h
     SetConsoleCP(CP_UTF8);
 
-    cout << "Digite o número de milhas: \n";
-    double miles;
-    cin >> miles;
-
-    cout << miles << " milhas ---> " << miles*1.609 << " quilômetros."; 
+    int double = 0;
 }

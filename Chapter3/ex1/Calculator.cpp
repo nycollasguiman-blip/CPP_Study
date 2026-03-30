@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-//Consertando os caracteres especiais
+// Consertando os caracteres especiais
 #include <windows.h> 
 
 // Esse programa eu fiz uma mini cálculadora para testar o que vi no capítulo 3 
