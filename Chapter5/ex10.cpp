@@ -9,7 +9,7 @@
 
 class Error_length{};
 
-int sum_numbers(vector<int> numbers, int amount){
+double sum_numbers(vector<double> numbers, int amount){
     if (numbers.size() < amount) throw Error_length();
 
     int sum = 0;
@@ -18,6 +18,16 @@ int sum_numbers(vector<int> numbers, int amount){
         sum += numbers[i];
 
     return sum;
+}
+
+void vec_difs(vector<double> numbers){
+
+    cout << "\nVetor de diferenças:\n[" << numbers[1] - numbers[0];
+
+    for (int i = 1; i < numbers.size() - 1; ++i)
+        cout << ", " << numbers[i+1] - numbers[i];
+
+    cout << "]";
 }
 int main()
 {
@@ -31,15 +41,17 @@ int main()
         cin >> n;
 
         cout << "\nDigite uma sequência de números: \n";
-        vector<int> sequence;
-        int number;
+        vector<double> sequence;
+        double number;
 
         while(cin >> number)
             sequence.push_back(number);
         
         int result = sum_numbers(sequence, n);
+        
 
         cout << "\nSomando os " << n << " primeiros o resultado é: " << result;
+        vec_difs(sequence);
 
     }
     catch(Error_length){
